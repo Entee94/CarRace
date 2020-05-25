@@ -22,12 +22,14 @@ public class InputOutput {
     }
     int[] place;
     int[] speed;
+    String carName;
 
-    public void winnerStatisticOutput(int[] place, int [] speed) {
+    public void winnerStatisticOutput(String carName, int[] place, int [] speed) {
+        this.carName= carName;
         this.place = place;
         this.speed = speed;
         int count = 1;
-        System.out.println("\n" + "Position and speed of the winner on each lap: " + "\n");
+        System.out.println("\n" + "Position and speed of the "+carName+" on each lap: " + "\n");
         for (int i=0; i<20;i++) {
             System.out.println("Lap №" + count + ": Position: " +Array.get(place,i) + " Speed: " + Array.get(speed,i));
             count++;

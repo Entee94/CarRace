@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.Callable;
 
-public class CallableCarRace implements Callable {
+public class CallableCar implements Callable {
 
 
     @Override
